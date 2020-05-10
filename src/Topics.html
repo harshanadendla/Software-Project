@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+  background-image: url("redCC.png");
+  background-size: contain,cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  background-size: 100% 120%;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 80px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 80px
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+}
+
+.button3:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.button4 {
+  background-color: white;
+  color: black;
+  border: 2px solid orange;
+}
+
+.button4:hover {
+    background-color: orange;
+}
+
+.button5 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+p {
+  font-size: 30px;
+  color: red;
+  margin-left: 520px;
+}
+
+p::first-letter {
+  color: black;
+}
+
+</style>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="OJ.html">OnlineJudges</a>
+    <a href="Topics.html">ProblemSet</a>
+    <a href="https://www.stopstalk.com/contests">UpcomingContests</a>
+    <a href="Resources.html">Resources</a>
+    <a href="https://cfviz.netlify.app/">Codeforces Visualiser</a>
+  </div>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Index</span>
+
+<p><b>ProblemSet</b></p>
+    <button class="button button1" onclick="location.href='https://www.a2oj.com/Category33.html'">Dynamic<br>Programming</button>
+    <button class="button button2" onclick="location.href='https://www.a2oj.com/Category13.html'">Dfs-Bfs-Dijkstra</button>
+    <button class="button button3" onclick="location.href='https://www.a2oj.com/Category56.html'">Greedy</button>
+    <button class="button button4" onclick="location.href='https://www.a2oj.com/Category101.html'">Graphs</button>
+    <button class="button button5" onclick="location.href='https://www.a2oj.com/Category119.html'">BackTracking</button>
+  <div class="container">
+    <div class="center"></div>
+  </div>
+    <button class="button button5" onclick="location.href='https://www.a2oj.com/Category85.html'">BruteForce</button>
+    <button class="button button1" onclick="location.href='https://www.a2oj.com/Category88.html'">Common-DS</button>
+    <button class="button button2" onclick="location.href='https://www.a2oj.com/Category92.html'">Implementation</button>
+    <button class="button button3" onclick="location.href='https://www.a2oj.com/Category86.html'">Math</button>
+    <button class="button button4" onclick="location.href='https://www.a2oj.com/Category40.html'">BinarySearch<br>&<br>TernarySearch</button>
+  <div class="container">
+    <div class="center"></div>
+  </div>
+    <button class="button button4" onclick="location.href='https://www.a2oj.com/Category94.html'">Construcutive<br>Algorithms</button>
+    <button class="button button5" onclick="location.href='https://www.a2oj.com/Category95.html'">Sortings</button>
+    <button class="button button1" onclick="location.href='https://www.a2oj.com/Category21.html'">Geometry</button>
+    <button class="button button2" onclick="location.href='https://www.a2oj.com/Category41.html'">NumberTheory</button>
+    <button class="button button3" onclick="location.href='https://www.a2oj.com/Category87.html'">Strings<br>&<br>TernarySearch</button>
+  <div class="container">
+    <div class="center"></div>
+  </div>
+    <button class="button button3" onclick="location.href='https://www.a2oj.com/Category90.html'">Combinatorics</button>
+    <button class="button button4" onclick="location.href='https://www.a2oj.com/Category89.html'">Trees</button>
+    <button class="button button5" onclick="location.href='https://www.a2oj.com/Category100.html'">Probability</button>
+    <button class="button button1" onclick="location.href='https://www.a2oj.com/Category96.html'">Two<br>Pointers</button>
+    <button class="button button2" onclick="location.href='https://www.a2oj.com/Category12.html'">NetWork<br>Flow</button>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "20%";
+}
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>     
+</body>
+</html>
