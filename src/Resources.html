@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+  background-image: url("redCC.png");
+  background-size: contain,cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  background-size: 100% 120%;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 80px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 80px;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+}
+
+.button3:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.button4 {
+  background-color: white;
+  color: black;
+  border: 2px solid orange;
+}
+
+.button4:hover {
+    background-color: orange;
+}
+
+.button5 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+.container { 
+  height: 100px;
+  position: relative;
+  border: 3px solid white;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+p {
+  font-size: 30px;
+  color: red;
+  margin-left: 520px;
+}
+
+p::first-letter {
+  color: black;
+}
+
+li {
+    color: red;
+}
+
+</style>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="OJ.html">OnlineJudges</a>
+    <a href="Topics.html">ProblemSet</a>
+    <a href="https://www.stopstalk.com/contests">UpcomingContests</a>
+    <a href="Resources.html">Resources</a>
+    <a href="https://cfviz.netlify.app/">Codeforces Visualiser</a>
+  </div>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Index</span>
+
+<p><b>Resources</b></p>
+
+<h1>Algebra</h1>
+<ul>
+    <li>Fundamentals
+        <ul>
+            <li><a href="https://cp-algorithms.com/algebra/binary-exp.html">Binary Exponentiation</a></li>
+            <li><a href="https://cp-algorithms.com/algebra/euclid-algorithm.html">Euclid-GCD</a></li>
+            <li><a href="https://cp-algorithms.com/algebra/extended-euclid-algorithm.html">Extened Euclidean Algorithm</a></li>
+            <li><a href="https://cp-algorithms.com/algebra/linear-diophantine-equation.html">Linear Diophantine Equations</a></li>
+            <li><a href="https://cp-algorithms.com/algebra/fibonacci-numbers.html">Fibanocci Numbers</a></li>
+        </ul>
+    </li>
+    <li>Prime Numbers
+        <ul>
+            <li><a href="https://cp-algorithms.com/algebra/sieve-of-eratosthenes.html">Seive of Eratosthenes</a></li>
+            <li><a href="https://cp-algorithms.com/algebra/prime-sieve-linear.html">Seive in O(n)</a></li>
+            <li><a href="https://cp-algorithms.com/algebra/primality_tests.html">Primality Test</a></li>
+            <li><a href="https://cp-algorithms.com/algebra/factorization.html">Integer Factorisation</a></li>
+        </ul>
+    </li>
+    <li>Number-Theoretic-Functions
+        <ul>
+            <li><a href="https://cp-algorithms.com/algebra/phi-function.html">Euler totient</a></li>
+            <li><a href="https://cp-algorithms.com/algebra/divisors.html">Number of divisors/Sum of divisors</a></li>
+        </ul>
+    </li>
+    <li>Modular Arithmetic
+        <ul>
+            <li><a href="https://cp-algorithms.com/algebra/module-inverse.html">Modular Inverse</a></li>
+            <li><a href="https://cp-algorithms.com/algebra/linear_congruence_equation.html">Linear Congruence Equation</a></li>
+            <li><a href="https://cp-algorithms.com/algebra/chinese-remainder-theorem.html">Chineese Remainder Theorem</a></li>
+            <li><a href="https://cp-algorithms.com/algebra/factorial-modulo.html">Factorial mod p</a></li>
+        </ul>
+    </li>
+    <li>Number Systems
+        <ul>
+            <li><a href="https://cp-algorithms.com/algebra/gray-code.html">Grey Code</a></li>
+            <li><a href="https://cp-algorithms.com/algebra/balanced-ternary.html">Balanced Ternary</a></li>
+        </ul>
+    </li>
+    <li>Other-Algos
+        <ul>
+            <li><a href="https://cp-algorithms.com/algebra/all-submasks.html">Submasks of a Bitmask</a></li>
+            <li><a href="https://cp-algorithms.com/algebra/big-integer.html">Arbitary precision Arithmetic</a></li>
+            <li><a href="https://cp-algorithms.com/algebra/fft.html">FFT</a></li>
+            <li><a href="https://cp-algorithms.com/algebra/polynomial.html">Polynomial series and Operations</a></li>
+        </ul>
+    </li>
+</ul>
+
+<h1>Data Structures</h1>
+<ul>
+    <li>Fundamentals
+        <ul>
+            <li><a href="https://cp-algorithms.com/data_structures/stack_queue_modification.html">Minimum Stack/Queue</a></li>
+            <li><a href="https://cp-algorithms.com/data_structures/sparse-table.html">Sparse Table</a></li>
+        </ul>
+    </li>
+    <li>Trees
+        <ul>
+            <li><a href="https://cp-algorithms.com/data_structures/disjoint_set_union.html">Disjoint-Set-Union</a></li>
+            <li><a href="https://cp-algorithms.com/data_structures/fenwick.html">Fenwick/Binary-Indexed Tree</a></li>
+            <li><a href="https://cp-algorithms.com/data_structures/sqrt_decomposition.html">Sqrt Decomposition</a></li>
+            <li><a href="https://cp-algorithms.com/data_structures/treap.html">Treap</a></li>
+            <li><a href="https://cp-algorithms.com/data_structures/sqrt-tree.html">Sqrt Tree</a></li>
+            <li><a href="https://cp-algorithms.com/data_structures/randomized_heap.html">Randomized Heap</a></li>
+        </ul>
+    </li>
+    <li>Advanced
+        <ul>
+            <li><a href="https://cp-algorithms.com/data_structures/deleting_in_log_n.html">Deleting in O(t(n)log(n))</a></li>
+        </ul>
+    </li>
+</ul>
+
+<h1>Dynamic Programming</h1>
+<ul>
+    <li>Dp Optimisations
+        <ul>
+            <li><a href="https://cp-algorithms.com/dynamic_programming/divide-and-conquer-dp.html">Divide&Conquer DP</a></li>
+        </ul>
+    </li>
+    <li>Tasks
+        <ul>
+            <li><a href="https://cp-algorithms.com/dynamic_programming/profile-dynamics.html">Dp on Broken Profile</a></li>
+            <li><a href="https://cp-algorithms.com/dynamic_programming/zero_matrix.html">Finding the largest 0 submatrix</a></li>
+        </ul>
+    </li>
+</ul>
+
+<h1>String Processing</h1>
+<ul>
+    <li>Fundamentals
+        <ul>
+            <li><a href="https://cp-algorithms.com/string/string-hashing.html">String Hashing</a></li>
+            <li><a href="https://cp-algorithms.com/string/rabin-karp.html">Rabin-Karp</a></li>
+            <li><a href="https://cp-algorithms.com/string/prefix-function.html">Prefix Function</a></li>
+            <li><a href="https://cp-algorithms.com/string/z-function.html">Z-Function</a></li>
+            <li><a href="https://cp-algorithms.com/string/suffix-array.html">Suffix-Array</a></li>
+        </ul>
+    </li>
+    <li>Advanced
+        <ul>
+            <li><a href="https://cp-algorithms.com/string/suffix-tree-ukkonen.html">Suffix-Tree</a></li>
+            <li><a href="https://cp-algorithms.com/string/suffix-automaton.html">Suffix-Automation</a></li>
+            <li><a href="https://cp-algorithms.com/string/lyndon_factorization.html">Lyndon-Factorisation</a></li>
+        </ul>
+    </li>
+    <li>Tasks
+        <ul>
+            <li><a href="https://cp-algorithms.com/string/expression_parsing.html">Expression parsing</a></li>
+            <li><a href="https://cp-algorithms.com/string/manacher.html">Manacher's Algorithm</a></li>
+            <li><a href="https://cp-algorithms.com/string/main_lorentz.html">Finding Repetitions</a></li>
+        </ul>
+    </li>
+</ul>
+
+<h1>Combinatorics</h1>
+<ul>
+    <li>Fundamentals
+        <ul>
+            <li><a href="https://cp-algorithms.com/algebra/factorial-divisors.html">Finding Power Of Factorial Divisors</a></li>
+            <li><a href="https://cp-algorithms.com/combinatorics/binomial-coefficients.html">Binomial Coefficients</a></li>
+            <li><a href="https://cp-algorithms.com/combinatorics/catalan-numbers.html">Catalan Numbers</a></li>
+        </ul>
+    </li>
+    <li>Techniques
+        <ul>
+            <li><a href="https://cp-algorithms.com/combinatorics/inclusion-exclusion.html">Inclusion-Exclusion</a></li>
+            <li><a href="https://cp-algorithms.com/combinatorics/burnside.html">Burnside's Lemma</a></li>
+            <li><a href="https://cp-algorithms.com/combinatorics/stars_and_bars.html">Stars And Bars</a></li>
+            <li><a href="https://cp-algorithms.com/combinatorics/generating_combinations.html">Generating k combinations</a></li>
+        </ul>
+    </li>
+    <li>Tasks
+        <ul>
+            <li><a href="https://cp-algorithms.com/combinatorics/bishops-on-chessboard.html">Placing Bishops On a Chess Board</a></li>
+            <li><a href="https://cp-algorithms.com/combinatorics/bracket_sequences.html">Balanced Bracket Sequences</a></li>
+            <li><a href="https://cp-algorithms.com/combinatorics/counting_labeled_graphs.html">Counting Labeled Graphs</a></li>
+        </ul>
+    </li>
+</ul>
+
+<h1>Graphs</h1>
+<ul>
+    <li>Fundamentals
+        <ul>
+            <li><a href="https://cp-algorithms.com/graph/breadth-first-search.html">BFS</a></li>
+            <li><a href="https://cp-algorithms.com/graph/depth-first-search.html">DFS</a></li>
+        </ul>
+    </li>
+    <li>Connected Components
+        <ul>
+            <li><a href="https://cp-algorithms.com/graph/bridge-searching.html">Finding Bridges</a></li>
+            <li><a href="https://cp-algorithms.com/graph/cutpoints.html">Finding Articulation Points</a></li>
+        </ul>
+    </li>
+    <li>Shortest-Paths
+        <ul>
+            <li><a href="https://cp-algorithms.com/graph/dijkstra.html">Dijkstra's Algorithm</a></li>
+            <li><a href="https://cp-algorithms.com/graph/bellman_ford.html">Bellman Ford's Algorithm</a></li>
+            <li><a href="https://cp-algorithms.com/graph/all-pair-shortest-path-floyd-warshall.html">FloydWarshalls's Algorithm</a></li>
+        </ul>
+    </li>
+    <li>Spanning Trees
+        <ul>
+            <li><a href="https://cp-algorithms.com/graph/mst_prim.html">Prim's Algorithm</a></li>
+            <li><a href="https://cp-algorithms.com/graph/mst_kruskal_with_dsu.html">Kruskal's Algorithm</a></li>
+            <li><a href="https://cp-algorithms.com/graph/kirchhoff-theorem.html">Krichhoff's Theorem</a></li>
+        </ul>
+    </li>
+    <li>Cycles
+        <ul>
+            <li><a href="https://cp-algorithms.com/graph/finding-cycle.html">Finding A Cycle In A Graph</a></li>
+            <li><a href="https://cp-algorithms.com/graph/finding-negative-cycle-in-graph.html">Finding A Negative Cycle In A Graph</a></li>
+            <li><a href="https://cp-algorithms.com/graph/euler_path.html">Euler-Path</a></li>
+        </ul>
+    </li>
+    <li>Lowest-Common-Ancestor
+        <ul>
+            <li><a href="https://cp-algorithms.com/graph/lca.html">Finding lca</a></li>
+            <li><a href="https://cp-algorithms.com/graph/rmq_linear.html">Solve RMQ by finding LCA</a></li>
+            <li><a href="https://cp-algorithms.com/graph/euler_path.html">Euler-Path</a></li>
+        </ul>
+    </li>
+    <li>Other Algos
+        <ul>
+            <li><a href="https://cp-algorithms.com/graph/bipartite-check.html">Bipartite checking of a graph</a></li>
+        </ul>
+    </li>
+</ul>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "20%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+     
+</body>
+</html>
